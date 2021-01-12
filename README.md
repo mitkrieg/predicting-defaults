@@ -4,16 +4,16 @@
 
 ## Overview
 
+To optimize returns, Banks must manage their risk when providing credit cards to customers. This project attempts to create a model that predicts if a client will or will not default on their loan. The best model was a random forrest and had an accuracy of XXX and F-1 score of XXX. The model was chosen using F-1 score to balance precision and recall (trying not to favor false positives or false negatives).
 
 
-## Business Understanding
+## Data:
 
+This datset comes from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients)
 
-## Data
+## Methods:
 
-
-## Methods
-
+Using various binary classification methods
 
 ## Exploratory Data Analysis
 
