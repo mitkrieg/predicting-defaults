@@ -82,7 +82,7 @@ Next steps are to:
 
 ```
 ├── data                      <- directory containing data used for project modeling
-├──                           <- directory containg images of plotting
+├── images                    <- directory containg images of plotting
 ├── Holdout.ipynb             <- Jupyter Notebook containing predictions of the best model on holdout test set.
 ├── bakeoff_instructions.md   <- instructions for the competition
 ├── defaults-in-taiwan.ipynb  <- Narrative Jupyter Notebook containing EDA and modeling processes
