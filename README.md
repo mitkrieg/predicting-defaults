@@ -43,20 +43,46 @@ Default rates varied slightly based on gender, education level and marital statu
   <img src="images/marital.png" width=250 /> 
 </p>
 
+The closer to a customer's bill was to their credit limit, the more defaults appeared (green dots along the $y=x$ line or the upper region of the triagnular area):
+
+![bal vs limit](images/limit_v_bal.png)
+
+Similarly on average people were only likely to pay their card minimum (~ \$5000) which was much less than their card bill:
+
+![avg bill vs payment](images/pay_v_bill.png)
+
 ## Results
 
+A random forest model after a tuning  with grid search was the best performer using the F-1 score. The best paramenters were:
+
+| Hyperparameter  | Values  |
+|---|---|
+| Max Depth  | 6  |
+| Max Features  | 7**  |
+| Max Lead Nodes  |  35  |
+| Max Samples | 0.75  |
+| Min Sample Split | 25 |
+| Num of Esitmators| 100 |
+
+This model generated an F1 score of .56 on the test set.
 
 ## Conclusions
 
+On the holdout set, this model came in 3rd place of 30 competitng models.
 
 ## Next Steps
 
 Next steps are to:
+
+- Tune models further and idenitfy better feature selection processes
+- Add additional feature interactions and potentially polynomial features
+- Conduct research on cultural and economic differences in Taiwan
  
 ## Repository Structure
 
 ```
 ├── data                      <- directory containing data used for project modeling
+├──                           <- directory containg images of plotting
 ├── Holdout.ipynb             <- Jupyter Notebook containing predictions of the best model on holdout test set.
 ├── bakeoff_instructions.md   <- instructions for the competition
 ├── defaults-in-taiwan.ipynb  <- Narrative Jupyter Notebook containing EDA and modeling processes
